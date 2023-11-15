@@ -1,0 +1,11 @@
+html
+    include includes/head.pug
+    body
+        include includes/header.pug
+        main
+            h2= task.title
+            div(class="tags")
+                each tag in task.tags
+                    span=tag.name
+
+                    
